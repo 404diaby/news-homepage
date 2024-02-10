@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    
+@font-face {
+  font-family: 'Inter-regular';
+  src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format("truetype-variations");
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Inter-bold';
+  src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format("truetype-variations");
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Inter-extrabold';
+  src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format("truetype-variations");
+  font-weight: 800;
+}
+
+
+    :root{
+      
+      --cv-soft-orange : hsl(35, 77%, 62%); /* title side bar */
+      --cv-soft-red : hsl(5, 85%, 63%); /* button */
+      --cv-very-dark-blue : hsl(240, 100%, 5%); /* titles and side bar background */
+      --cv-dark-grayish-blue : hsl(236, 13%, 42%); /* pragraph witn  sidebar  and maybe nav color */
+      --cv-grayish-blue :  hsl(233, 8%, 79%); /* numbers  and maybe sidebar paragraph*/
+      --cv-off-white: hsl(36, 100%, 99%); /* background-color , side bar tilte articles, button color */
+    }
+    
+    body{
+      font-family: 'Inter-regular';
+      background-color: var(--cv-off-white);
+    }
+    .numbers{
+       color: var(--cv-grayish-blue);
+       font-family: 'Inter-bold';
+    }
+    h3{
+      color: var(--cv-very-dark-blue);
+      font-family: 'Inter-bold';
+    }
+    .articles-p{
+      color: var(--cv-dark-grayish-blue);
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="container-fluid d-flex flex-column  min-vh-100">
+  <header class="container">
+   
+    
+    <nav class="navbar navbar-expand-sm bg-light">
+    <div class="container-fluid my-5">
+    <a class="navbar-brand" href="javascript:void(0)"><img src="./assets/images/logo.svg" alt="Logo"/></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+      <ul class="navbar-nav me-auto collapse navbar-collapse justify-content-end" id="mynavbar">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">New</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Popular</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Trending</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Categories</a>
+        </li>
+      </ul>
+    
+   
+    </div>
+      </nav>
+  </header>
+
+
+
+  <main class="container flex-grow-1 "> 
+   
+    <section id="one" class="container">
+      <div class="row">
+        <div class="col">
+          <img class="img-fluid" src="./assets/images/image-web-3-desktop.jpg">
+        </div>
+        <aside class="col py-4 px-3" style="background-color: var( --cv-very-dark-blue); 
+        color: var(--cv-off-white)">
+          <p class="fs-2" style=" font-family: 'Inter-bold'; color: var(--cv-soft-orange);">New</p>
+          <div>
+            <h2> Hydrogen VS Electric Cars</h2>
+            <p> Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <hr >
+          <div>
+            <h2> The Downsides of AI Artistry</h2>
+            <p>   What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <hr>
+          <div>
+            <h2>  Is VC Funding Drying Up?</h2>
+            <p>   Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </aside>
+      </div>
+      
+
+
+
+    </section>
+
+
+
+      <section id="two" class="container">
+        <div class=" row">
+          <div class="container col-sm-4 d-flex gap-4">
+            <div class=" ">
+              <img class="img-fluid" src="./assets/images/image-retro-pcs.jpg">
+            </div>
+            <div class=" w-75 d-flex flex-column justify-content-between  ">
+              <p class=" numbers fs-2  ">01</p>
+              <h3  class="fs-4">  Reviving Retro PCs</h3>
+              <span class="articles-p lh-lg ">  What happens when old PCs are given modern upgrades?</span>
+            </div>
+          </div>
+          <div class=" container col-sm-4 d-flex gap-4">
+            <div class="">
+              <img class="img-fluid" src="./assets/images/image-top-laptops.jpg">
+            </div>
+          
+            <div class="w-75 d-flex flex-column justify-content-between ">
+              <p class="numbers fs-2 "> 02</p>
+              <h3 class="fs-4">Top 10 Laptops of 2022</h3>
+              <span class="articles-p lh-lg">  Our best picks for various needs and budgets.</span>
+            </div>
+          </div>
+          <div class=" container col-sm-4 d-flex gap-4">
+            <div class="">
+              <img class="img-fluid" src="./assets/images/image-gaming-growth.jpg">
+            </div>
+            <div class="w-75 d-flex flex-column justify-content-between ">
+              <p class="numbers fs-2 "> 03</p>
+              <h3 class="fs-4 "> The Growth of Gaming</h3>
+              <span class="articles-p lh-lg"> How the pandemic has sparked fresh opportunities.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+
+   
+  The Bright Future of Web 3.0?
+
+  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+  But is it really fulfilling its promise?
+
+  Read more
+
+
+  
+
+
+
+ 
+  <footer>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  </footer>
+  
+  
+
+
+</body>
+</html>
