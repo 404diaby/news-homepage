@@ -53,6 +53,13 @@
     .nav-item .nav-link:hover{
       color: var(--cv-soft-orange) !important;
     }
+    #btn-read-more:hover{
+      background-color: var(--cv-very-dark-blue)!important;
+    }
+h2:hover {
+  cursor: pointer;
+  color: var(--cv-soft-orange) !important;
+}
     .numbers{
        color: var(--cv-grayish-blue);
        font-family: 'Inter-bold';
@@ -60,6 +67,10 @@
     h3{
       color: var(--cv-very-dark-blue);
       font-family: 'Inter-extrabold';
+      cursor: pointer;
+    }
+    h3:hover{
+      color: var(--cv-soft-orange) !important;
     }
     .articles-p{
       color: var(--cv-dark-grayish-blue);
@@ -110,17 +121,17 @@
       <div class="row gap-3">
         <div class="col-md-8 col-lg-8 mx-auto text-left py-3 d-flex flex-column gap-4">
           <img class="img-fluid" src="./assets/images/image-web-3-desktop.jpg">
-          <div class="row">
+          <div class="row gx-1">
             <div class="col">
               <h1 class="display-4 w-75 lh-1" style=" font-family: 'Inter-extrabold'; color: var(--cv-very-dark-blue);" >The Bright Future of Web 3.0?</h1>
              
             </div>
             <div class="col d-flex flex-column justify-content-between">
-               <p style="color: var(--cv-very-dark-blue);">
+               <p class="me-1" style="color: var(--cv-very-dark-blue);">
                 We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
               But is it really fulfilling its promise?
                </p>
-               <button type="button" class="btn btn-primary w-50" style="  font-family: 'Inter-bold'; background-color: var(--cv-soft-red);" > Read more</button>
+               <a id="btn-read-more" href="#" class="text-decoration-none w-50 py-3 text-uppercase text-center" style="  font-family: 'Inter-bold'; color: var(--cv-off-white); background-color: var(--cv-soft-red);" > Read more</a>
             
              
             </div>
@@ -134,17 +145,17 @@
           <p class="fs-1" style=" font-family: 'Inter-bold'; color: var(--cv-soft-orange);">New</p>
          
             <h2 class="fs-4" style=" font-family: 'Inter-bold'; "> Hydrogen VS Electric Cars</h2>
-            <p style=" color: var(--cv-grayish-blue);"> Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <p class="me-5" style=" color: var(--cv-grayish-blue);"> Will hydrogen-fueled cars ever catch up to EVs?</p>
           
           <hr >
          
             <h2 class="fs-4"  style=" font-family: 'Inter-bold'; "> The Downsides of AI Artistry</h2>
-            <p style=" color: var(--cv-grayish-blue);">   What are the possible adverse effects of on-demand AI image generation?</p>
+            <p class="me-5" style=" color: var(--cv-grayish-blue);">   What are the possible adverse effects of on-demand AI image generation?</p>
          
           <hr>
         
             <h2 class="fs-4" style=" font-family: 'Inter-bold'; ">  Is VC Funding Drying Up?</h2>
-            <p style=" color: var(--cv-grayish-blue);">   Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            <p class="me-5" style=" color: var(--cv-grayish-blue);">   Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
           
         </aside>
       </div>
