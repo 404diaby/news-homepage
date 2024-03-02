@@ -1,0 +1,125 @@
+
+
+  
+@font-face {
+font-family: 'Inter-regular';
+src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format("truetype-variations");
+font-weight: 400;
+}
+@font-face {
+font-family: 'Inter-bold';
+src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format("truetype-variations");
+font-weight: 700;
+}
+@font-face {
+font-family: 'Inter-extrabold';
+src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format("truetype-variations");
+font-weight: 800;
+}
+
+
+:root{
+    --cv-soft-orange : hsl(35, 77%, 62%); /* title side bar */
+    --cv-soft-red : hsl(5, 85%, 63%); /* button */
+    --cv-very-dark-blue : hsl(240, 100%, 5%); /* titles and side bar background */
+    --cv-dark-grayish-blue : hsl(236, 13%, 42%); /* pragraph witn  sidebar  and maybe nav color */
+    --cv-grayish-blue :  hsl(233, 8%, 79%); /* numbers  and maybe sidebar paragraph*/
+    --cv-off-white: hsl(36, 100%, 99%); /* background-color , side bar tilte articles, button color */
+    
+}
+  
+body{
+    font-family: 'Inter-regular';
+    background-color: var(--cv-off-white);
+}
+  /* header */
+  
+.nav-item .nav-link:hover{
+    color: var(--cv-soft-orange) !important;
+}
+
+header nav div button{
+    border: none;
+}
+
+header nav div button span img{
+    width: 50px;
+}
+.button-close{
+    font-size: 1em;
+} 
+
+  /* end header */
+  h1{
+    font-family: 'Inter-extrabold'; 
+    color: var(--cv-very-dark-blue);
+  }
+  #one div div div div p{
+    color: var(--cv-very-dark-blue);
+  }
+  #btn-read-more{
+    letter-spacing: 4px;
+    font-family: 'Inter-bold'; 
+    color: var(--cv-off-white); 
+    background-color: var(--cv-soft-red);
+  }
+  #btn-read-more:hover{
+    background-color: var(--cv-very-dark-blue)!important;
+  }
+aside{
+    background-color: var( --cv-very-dark-blue); 
+    color: var(--cv-off-white)
+}
+.aside-title{
+    font-family: 'Inter-bold';
+    color: var(--cv-soft-orange);
+}
+
+h2{
+    font-family: 'Inter-bold';
+  }
+h2:hover {
+cursor: pointer;
+color: var(--cv-soft-orange) !important;
+}
+h2 + p{
+    color: var(--cv-grayish-blue);
+}
+
+.bg-image{
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+
+#bg-image-1 {
+    background-image: url('../images/image-retro-pcs.jpg');
+}
+
+#bg-image-2 {
+    background-image: url('/assets/images/image-top-laptops.jpg');
+}
+#bg-image-3{
+    background-image: url('/assets/images/image-gaming-growth.jpg');
+}
+
+  .numbers{
+     color: var(--cv-grayish-blue);
+     font-family: 'Inter-bold';
+  }
+  h3{
+    color: var(--cv-very-dark-blue);
+    font-family: 'Inter-extrabold';
+    cursor: pointer;
+  }
+  h3:hover{
+    color: var(--cv-soft-orange) !important;
+  }
+  .articles-p{
+    color: var(--cv-dark-grayish-blue);
+  }
+  /* footer */
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }

@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style/index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <!-- Latest compiled and minified CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,220 +12,127 @@
 <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   
   <title>Frontend Mentor | News homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-
-    
-@font-face {
-  font-family: 'Inter-regular';
-  src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format("truetype-variations");
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'Inter-bold';
-  src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format("truetype-variations");
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'Inter-extrabold';
-  src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format("truetype-variations");
-  font-weight: 800;
-}
-
-
-    :root{
-      
-      --cv-soft-orange : hsl(35, 77%, 62%); /* title side bar */
-      --cv-soft-red : hsl(5, 85%, 63%); /* button */
-      --cv-very-dark-blue : hsl(240, 100%, 5%); /* titles and side bar background */
-      --cv-dark-grayish-blue : hsl(236, 13%, 42%); /* pragraph witn  sidebar  and maybe nav color */
-      --cv-grayish-blue :  hsl(233, 8%, 79%); /* numbers  and maybe sidebar paragraph*/
-      --cv-off-white: hsl(36, 100%, 99%); /* background-color , side bar tilte articles, button color */
-      
-    }
-    
-    body{
-      font-family: 'Inter-regular';
-      background-color: var(--cv-off-white);
-    }
-    /* nav */
-    .nav-item .nav-link:hover{
-      color: var(--cv-soft-orange) !important;
-    }
-    #btn-read-more:hover{
-      background-color: var(--cv-very-dark-blue)!important;
-    }
-h2:hover {
-  cursor: pointer;
-  color: var(--cv-soft-orange) !important;
-}
-    .numbers{
-       color: var(--cv-grayish-blue);
-       font-family: 'Inter-bold';
-    }
-    h3{
-      color: var(--cv-very-dark-blue);
-      font-family: 'Inter-extrabold';
-      cursor: pointer;
-    }
-    h3:hover{
-      color: var(--cv-soft-orange) !important;
-    }
-    .articles-p{
-      color: var(--cv-dark-grayish-blue);
-    }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body class="container-fluid d-flex flex-column  min-vh-100">
   <header class="container">
    
     
-    <nav class="navbar navbar-expand-sm bg-light fixed-topb   ">
-    <div class="container-fluid my-5">
-    <a class="navbar-brand" href="javascript:void(0)"><img src="./assets/images/logo.svg" alt="Logo"/></a>
-    <button style="border: none;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icn "><img style="width: 60px;" src="./assets/images/icon-menu.svg" alt="" /></span>
-    </button>
+    <nav class="navbar navbar-expand-sm bg-light ">
+      <div class="container-fluid  my-3 my-sm-5 ">
+        <a class="navbar-brand" href="javascript:void(0)"><img src="./assets/images/logo.svg" alt="Logo"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span><img src="./assets/images/icon-menu.svg" alt="" /></span>
+        </button>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">New</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Popular</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Trending</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Categories</a>
-        </li>
+        <div class="offcanvas offcanvas-end fs-3 pt-3 ps-3" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">New</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0)">Categories</a>
+            </li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
-
-      
+          </div>
+        </div>   
+    
       </div>
-    </div>
-
-    
-     
-    
-   
-    </div>
-      </nav>
+    </nav>
   </header>
-
-
-
-  <main class="container flex-grow-1 "> 
-   
-    <section id="one" class="container">
+  <main class="container container-sm  flex-grow-1"> 
+    <section id="one" class="">
       <div class="row gap-3">
-        <div class="col-md-8 col-lg-8 mx-auto text-left py-3 d-flex flex-column gap-4">
-          <img class="img-fluid" src="./assets/images/image-web-3-desktop.jpg">
+        <div class="col-md-8 col-lg-8 mx-md-auto  text-left py-md-3 d-flex flex-column gap-4">
+          <div class="row">
+            <img class="img-fluid" src="./assets/images/image-web-3-desktop.jpg" >
+          </div>
           <div class="row gx-1">
-            <div class="col">
-              <h1 class="display-4 w-75 lh-1" style=" font-family: 'Inter-extrabold'; color: var(--cv-very-dark-blue);" >The Bright Future of Web 3.0?</h1>
-             
+            <div class="col-sm-6">
+              <h1 class="display-4 w-75 lh-1"  >The Bright Future of Web 3.0?</h1>
             </div>
-            <div class="col d-flex flex-column justify-content-between">
-               <p class="me-1" style="color: var(--cv-very-dark-blue);">
+            <div class="col-sm-6 d-flex flex-column justify-content-between">
+               <p class="me-1" >
                 We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
               But is it really fulfilling its promise?
                </p>
-               <a id="btn-read-more" href="#" class="text-decoration-none w-50 py-3 text-uppercase text-center" style="  font-family: 'Inter-bold'; color: var(--cv-off-white); background-color: var(--cv-soft-red);" > Read more</a>
-            
-             
+               <a id="btn-read-more" href="#" class="text-decoration-none w-50 py-3 text-uppercase text-center tracking-tighter" > Read more</a>
             </div>
-
           </div>
-          
         </div>
-        <aside class=" col mx-auto text-left my-3 py-3 px-4 d-flex flex-column justify-content-between" 
-            style="background-color: var( --cv-very-dark-blue); 
-        color: var(--cv-off-white)">
-          <p class="fs-1" style=" font-family: 'Inter-bold'; color: var(--cv-soft-orange);">New</p>
-         
-            <h2 class="fs-4" style=" font-family: 'Inter-bold'; "> Hydrogen VS Electric Cars</h2>
-            <p class="me-5" style=" color: var(--cv-grayish-blue);"> Will hydrogen-fueled cars ever catch up to EVs?</p>
-          
+        <aside class=" col mx-auto text-left my-3 py-3 px-4 d-flex flex-column justify-content-between" >
+          <p class="fs-1 aside-title" >New</p>
+            <h2 class="fs-4" > Hydrogen VS Electric Cars</h2>
+            <p class="me-md-5" > Will hydrogen-fueled cars ever catch up to EVs?</p>
           <hr >
-         
-            <h2 class="fs-4"  style=" font-family: 'Inter-bold'; "> The Downsides of AI Artistry</h2>
-            <p class="me-5" style=" color: var(--cv-grayish-blue);">   What are the possible adverse effects of on-demand AI image generation?</p>
-         
+            <h2 class="fs-4"> The Downsides of AI Artistry</h2>
+            <p class="me-md-5" >   What are the possible adverse effects of on-demand AI image generation?</p>
           <hr>
-        
-            <h2 class="fs-4" style=" font-family: 'Inter-bold'; ">  Is VC Funding Drying Up?</h2>
-            <p class="me-5" style=" color: var(--cv-grayish-blue);">   Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-          
+            <h2 class="fs-4" >  Is VC Funding Drying Up?</h2>
+            <p class="me-md-5" >   Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
         </aside>
       </div>
     </section>
-
-
-
-      <section id="two" class="container my-5">
-        <div class=" row ">
-          <div class="container col-sm-4 d-flex gap-4">
-            <div class=" ">
-              <img class="img-fluid" src="./assets/images/image-retro-pcs.jpg">
-            </div>
-            <div class=" w-75 d-flex flex-column justify-content-between  ">
-              <p class=" numbers fs-2  ">01</p>
-              <h3  class="fs-5">  Reviving Retro PCs</h3>
-              <span class="articles-p lh-lg ">  What happens when old PCs are given modern upgrades?</span>
+      <section id="two" class=" my-5">      
+        <div class=" row row-gap-5 ">
+          <div class="  col-sm-4">
+            <div class="row g">
+              <div id="bg-image-1" class="col-4 bg-image " >
+              </div>
+              <div class="col-8 ">
+                <p class="numbers fs-2 "> 01</p>
+                <h3 class="fs-5">Reviving Retro PCs</h3>
+                <span class="articles-p lh-lg"> What happens when old PCs are given modern upgrades?</span>
+              </div>
             </div>
           </div>
-          <div class=" container col-sm-4 d-flex gap-4">
-            <div class="">
-              <img class="img-fluid" src="./assets/images/image-top-laptops.jpg">
-            </div>
-          
-            <div class="w-75 d-flex flex-column justify-content-between ">
-              <p class="numbers fs-2 "> 02</p>
-              <h3 class="fs-5">Top 10 Laptops of 2022</h3>
-              <span class="articles-p lh-lg">  Our best picks for various needs and budgets.</span>
-            </div>
-          </div>
-          <div class=" container col-sm-4 d-flex gap-4">
-            <div class="">
-              <img class="img-fluid" src="./assets/images/image-gaming-growth.jpg">
-            </div>
-            <div class="w-75 d-flex flex-column justify-content-between ">
-              <p class="numbers fs-2 "> 03</p>
-              <h3 class="fs-5 "> The Growth of Gaming</h3>
-              <span class="articles-p lh-lg"> How the pandemic has sparked fresh opportunities.</span>
+    
+          <div class="  col-sm-4">
+            <div class="row">
+              <div id="bg-image-2" class="col-4 bg-image " >
+              </div>
+              <div class="col-8 ">
+                <p class="numbers fs-2 "> 02</p>
+                <h3 class="fs-5">Top 10 Laptops of 2022</h3>
+                <span class="articles-p lh-lg">  Our best picks for various needs and budgets.</span>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="  col-sm-4">
+            <div class="row ">
+              <div id="bg-image-3" class="col-4 bg-image " >
+              </div>
+              <div class="col-8 ">
+                <p class="numbers fs-2 "> 03</p>
+                <h3 class="fs-5 "> The Growth of Gaming</h3>
+                <span class="articles-p lh-lg"> How the pandemic has sparked fresh opportunities.</span>
+              </div>
+            </div>
+          </div>
+        </div> 
       </section>
   </main>
-
-  <footer>
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.github.com/404diaby/">404diaby</a>.
-  </div>
+  <footer class="mt-5">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.github.com/404diaby/">404diaby</a>.
+    </div>
   </footer>
-  
-  
-
 
 </body>
 </html>
